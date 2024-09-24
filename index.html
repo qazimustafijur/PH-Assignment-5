@@ -31,14 +31,14 @@
                 <div>
                     <img src="assets/logo.png" alt="donation icon"> <span class="mx-4">Donate Bangladesh</span></div>
                 <div class="">
-                  <img src="assets/coin.png" alt="coin"> <span class="px-2 text-[#111111B3]"> 5000 BDT</span>
+                  <img src="assets/coin.png" alt="coin"> <span id="mainBalance" class="px-2 text-[#111111B3]"> 5000</span> BDT
                 </div>
               </div>
         </nav>
         <br>
         <section class="flex justify-center gap-5">
-          <button class="h-20 btn text-xl px-10 text-[#111111B3]">Donation</button>
-          <button class="h-20 btn text-xl px-10 text-[#111111B3]">History</button>
+          <button id="donation" class="h-20 btn text-xl px-10 text-[#111111B3]">Donation</button>
+          <button id="history" class="h-20 btn text-xl px-10 text-[#111111B3]">History</button>
       </section>
     </header>
     <main class="container mx-auto lg:px-16">
@@ -47,15 +47,17 @@
             <figure class="pl-6 py-6">
               <img class="h-full rounded-xl" src="assets/noakhali.png" alt="noakhali flood">
             </figure>
-            <div class="card-body w-1/2">
-              <button class="btn self-start"><img src="assets/coin.png" alt="coin"> 1000 BDT</button>
+            <div class="card-body w-1/2" id="noakhali">
+              <button class="btn self-start"><img src="assets/coin.png" alt="coin"> <span id="noakhaliBalance">1000</span> BDT</button>
               <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
               <p class="font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-              <input class="outline-none py-2" type="number" name="amount" id="noakhali-amount" placeholder="Write Donation Amount">
-              <button class="text-xl font-semibold btn bg-[#B4F461]">Donate Now</button>
+              <input class="outline-none border px-3 rounded-lg border-gray-300 py-2" type="number" name="amount" id="noakhaliInput" placeholder="Write Donation Amount">
+              <button id="noakhaliDonate" class="text-xl font-semibold btn bg-[#B4F461]">Donate Now</button>
               </div>
             </div>
           </div>
     </main>
+  <script src="js/shared.js"></script>
+  <script src="js/donation.js"></script>
 </body>
 </html>

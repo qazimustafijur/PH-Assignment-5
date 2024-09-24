@@ -1,0 +1,1 @@
+addEventListenerById("click",'noakhaliDonate',increaseBalance);
