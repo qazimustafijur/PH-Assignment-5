@@ -5,6 +5,7 @@ function increaseBalance(e){
     let id = e.target.parentElement.id;
     let inputElement = document.getElementById(id+"Input");
     let input = inputElement.value;
+    let modal=document.getElementById('cModal');
     inputElement.value = "";
     // validating input 
     if (isNaN(input) || input<1){
@@ -22,6 +23,7 @@ function increaseBalance(e){
     target.innerText = output;
     decreaseMainBalance(input);
     addHistory(input,id);
+    modal.showModal();
 }
 
 //decreases the main balance. this function is called from inside the increaseBalance function

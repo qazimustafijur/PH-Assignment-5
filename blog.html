@@ -28,20 +28,49 @@
      </style>
 </head>
 <body class="lexend lg:text-xl font-semibold">
-    <header class="pb-8">
-        <nav class="pt-5 pb-16 bg-[#F9F7F3]">
+    <header class="lg:pb-8 sticky top-0 z-20 backdrop-blur-md">
+        <nav class="pt-5 lg:pb-16 pb-5 bg-[#F9F7F3]">
             <div class="navbar lg:px-16 flex justify-between container mx-auto">
                 <div>
                   <a class="btn text-xl px-7 parrot-bg" href="index.html">Home</a>
                 </div>
                 <div>
-                    <img src="assets/logo.png" alt="donation icon"> <span class="mx-4">Donate Bangladesh</span></div>
+                    <img src="assets/logo.png" alt="donation icon"> <span class="mx-4 hidden lg:block md:block">Donate Bangladesh</span></div>
                 <div class="">
                   <img src="assets/coin.png" alt="coin"> <span id="mainBalance" class="px-2 text-[#111111B3]"> 50000</span> BDT
                 </div>
               </div>
         </nav>
-        <br>
     </header>
+    <main class="container mx-auto">
+      <h2>Important FAQ <img class="inline mb-8" src="assets/icons8-faq.gif" alt="faq"> </h2>
+      <div tabindex="0" class=" py-5 collapse border border-gray-200 collapse-arrow">
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p class="font-normal">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+        </div>
+      </div>
+      <div tabindex="0" class="py-5 collapse border border-gray-200 collapse-arrow">
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="font-normal">Element can be selected using many selectors. document.getElementByID('id') is used to find element by id. Similarly for class document.getElementsByClassName(). There are other selectors in JS. querySelector() and querySelectorAll() etc.</p>
+        </div>
+      </div>
+      <div tabindex="0" class="py-5 collapse border border-gray-200 collapse-arrow">
+        <div class="collapse-title text-xl font-medium">What is Event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p class="font-normal">Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+        </div>
+      </div>
+    </div>
+    <div tabindex="0" class="py-5 collapse border border-gray-200 collapse-arrow">
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+      <div class="collapse-content">
+        <p class="font-normal">To manipulate attributes : "setAttribute()" or "getAttribute()" method.</p>
+        <p class="font-normal">To manipulate styles : "element.style" is used. There is also other ways.</p>
+      </div>
+    </div>
+    </main>
+    <br><br>
    </body>
 </html>
