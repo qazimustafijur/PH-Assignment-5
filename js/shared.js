@@ -21,6 +21,7 @@ function increaseBalance(e){
     }
     target.innerText = output;
     decreaseMainBalance(input);
+    addHistory(input,id);
 }
 
 //decreases the main balance. this function is called from inside the increaseBalance function
@@ -31,7 +32,6 @@ function decreaseMainBalance(decrease){
         return 0;
     }
     balanceElement.innerText= parseFloat(balanceElement.innerText)-decrease;
-
 }
 // eventlistener adding by id and function
 function addEventListenerById(event,id,func){
@@ -47,6 +47,13 @@ function donationButtonColor(e){
     e.target.id=="donationBtn"?[a,b]=[b,a]:[c,d]=[d,c];
     a.classList.add('hidden');
     b.classList.remove('hidden');
-    c.classList.add('bg-[#B4F461]');
-    d.classList.remove('bg-[#B4F461]');
+    c.classList.add('parrot-bg');
+    d.classList.remove('parrot-bg');
+}
+function addHistory(de,id){
+    let title = document.getElementById(id+"Title").innerText;
+    let output = document.createElement('div');
+    output.className='p-5 border border-gray-300 rounded-xl my-5 gap-5';
+    output.innerHTML = "<p class='p-3'> "+de+" Taka is Donated for "+title+"</p>"+"<p class='font-light p-2'>"+new Date()+"</p>";
+    document.getElementById('historySec').appendChild(output);
 }

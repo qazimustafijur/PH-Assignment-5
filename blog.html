@@ -19,26 +19,29 @@
         .lexend{
             font-family: "lexend";
         }
+        .parrot-bg{
+          background-color: #B4F461;
+        }
+        .parrot-bg:hover{
+          background-color: #b4f461e8;
+        }
      </style>
 </head>
 <body class="lexend lg:text-xl font-semibold">
-    <header class="pb-8 border-b border-gray-300">
+    <header class="pb-8">
         <nav class="pt-5 pb-16 bg-[#F9F7F3]">
             <div class="navbar lg:px-16 flex justify-between container mx-auto">
                 <div>
-                  <a href="index.html" class="btn text-xl px-7 bg-[#B4F461]">Home</a>
+                  <a class="btn text-xl px-7 parrot-bg" href="index.html">Home</a>
                 </div>
                 <div>
                     <img src="assets/logo.png" alt="donation icon"> <span class="mx-4">Donate Bangladesh</span></div>
                 <div class="">
-                  <img src="assets/coin.png" alt="coin"> <span class="px-2 text-[#111111B3]"> 5000 BDT</span>
+                  <img src="assets/coin.png" alt="coin"> <span id="mainBalance" class="px-2 text-[#111111B3]"> 50000</span> BDT
                 </div>
               </div>
         </nav>
         <br>
     </header>
-    <main class="container mx-auto lg:px-16">
-        
-    </main>
-</body>
+   </body>
 </html>
